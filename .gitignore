@@ -1,2 +1,4 @@
-
 .DS_Store
+node_modules
+assets/style.css
+assets/style.css.map
