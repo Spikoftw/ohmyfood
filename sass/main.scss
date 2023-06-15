@@ -19,6 +19,13 @@ h2 {
     margin-top: 48px;
 }
 
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
 /* Header */
 
 .header {
@@ -140,5 +147,61 @@ h2 {
 }
 
 /* Section restaurants */
+
+.restaurants {
+    padding: 6px 18px 0;
+    background-color: $lightgrey;
+
+    &__card {
+        position: relative;
+        background-color: white;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-img {
+            background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+            background-size: 100%;
+            background-position: center bottom;
+            flex: 173px;
+
+        }
+
+        &-bottom {
+            height: 77px;
+            padding: 0 13px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-desc {
+                p {
+                    font-weight: 300;
+                    font-size: 17px;
+                    margin: 0;
+                }
+            }
+        }
+
+    
+        .flag-new {
+            position: absolute;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 7px 10px;
+            color: $darkgreen;
+            background-color: $lightgreen;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 2px;
+            top: 15px;
+            right: 15px;
+        }
+    }
+}
 
 /* Footer */
