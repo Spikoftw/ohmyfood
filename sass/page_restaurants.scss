@@ -1,0 +1,128 @@
+.header {
+
+    &__image {
+        width: 100%;
+        background-image: url(/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg
+        );
+        background-size: 100%;
+        flex: 275px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        width: 100%;
+
+        &-arrow {
+            font-size: 17px;
+            position:absolute;
+            left: 23px;
+            top: 24px;
+            z-index: 99;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #353535;
+            z-index: 99;
+        }
+    }
+
+}
+
+.lapalettedugout {
+margin-top: -50px;
+border-radius: 40px 40px 0px 0px;
+background-color: $white;
+z-index: 2;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 17px;
+
+        &__titre {
+            font-family: "Shrikhand", cursive;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 41px;
+            color: $lighterblack;
+            margin: 0;
+            padding-top: 32px;
+            padding-bottom: 42px;
+        }
+
+        &__icone {
+            font-size: 22px;
+            padding-right: 24px;
+        }
+    }
+    
+    .categories {
+        padding-bottom: 40px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .categorie {
+
+        padding: 0 13px;
+
+        &__titre {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+
+        &__soulignement {
+            border: 2px solid #99E2D0;
+            width: 40px;
+        }
+        }
+
+        &__content {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 12px 15px;
+            margin-top: 12px;
+
+            &__nomduplat {
+                margin: 0;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 5px;
+            }
+
+            &__desc {
+                margin: 0;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px; 
+            }
+
+            &__prix {
+                margin: 0;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .commander-button {
+        margin: 0 auto -26px auto;
+    }
+}
+
