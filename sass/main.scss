@@ -79,10 +79,13 @@ h3 {
     flex-direction: column;
     align-items: center;
     background-color: $lightgrey;
-    padding-bottom: 85px;
+    padding-bottom: 57px;
+    margin-bottom: 48px;
+    width: 100%;
 
-    @media screen and (min-width: 1024px) {
-    padding-bottom: 80px;        
+    @media screen and (min-width: 1180px) {
+        padding-bottom: 30px;
+        margin-bottom: 50px;      
     }
 
     &__title, &__desc {
@@ -111,10 +114,17 @@ h3 {
 /* Section fonctionnement */
 
 .fonctionnement {
-    padding: 0 20px 68px 32px;
+    padding: 0 20px 68px 20px;
+    margin: auto;
 
     @media screen and (min-width: 900px) {
-    padding-bottom: 80px;        
+    padding-bottom: 80px; 
+    width: 710px;       
+    }
+
+    @media screen and (min-width: 1180px) {
+        width: 1040px;
+        
     }
 
     h2 {
@@ -129,7 +139,7 @@ h3 {
         justify-content: center;
         align-items: center;
 
-        @media screen and (min-width: 980px) {
+        @media screen and (min-width: 1180px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 36px;
@@ -162,7 +172,7 @@ h3 {
         padding: 25px 34px;
         background-color: #F7F7F7;
 
-        @media screen and (min-width: 980px) {
+        @media screen and (min-width: 1180px) {
         margin-top: 0;            
         }
         
@@ -274,7 +284,7 @@ h3 {
 
         &-bottom {
             height: 77px;
-            padding: 0 13px;
+            padding: 0 33px 0 18px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -285,11 +295,6 @@ h3 {
                     font-size: 17px;
                     margin: 0;
                 }
-            }
-
-            &__heart {
-                font-size: 22px;
-                padding-right: 12px;
             }
         }
 
@@ -305,6 +310,55 @@ h3 {
             border-radius: 2px;
             top: 15px;
             right: 15px;
+        }
+
+        .like-container__like-btn {
+            position: relative;
+            border: none;
+            background: none;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            appearance: none;
+          
+            &::before,
+            &::after {
+              left: 0px;
+              top: 0px;
+              display: block;
+              position: absolute;
+              content: "\f004";
+              font-family: "Font Awesome 6 Free";
+              font-size: 20px;
+              transition: 400ms;
+              background: none;
+            }
+
+            &::before {
+                font-weight: 400;
+                opacity: 1;
+
+              }
+
+              &::after {
+                font-weight: 900;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                color: transparent;
+                opacity: 0;
+                -webkit-background-clip: text;
+                background-clip: text;
+              }
+
+          &:checked::before {
+            opacity: 0;
+          }
+          &:checked::after {
+            opacity: 1;
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
         }
     }
 }

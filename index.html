@@ -27,7 +27,7 @@
     <section class="hero">
         <h2 class="hero__title">Réservez le menu qui vous convient</h2>
         <p class="hero__desc">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="hero__btn primary-btn">Explorer nos restaurants</button>
+        <a href="#restaurants" class="hero__btn primary-btn">Explorer nos restaurants</a>
     </section>
 
     <section class="fonctionnement">
@@ -62,17 +62,18 @@
     <section class="restaurants">
         <h2 class="restaurants__title">Restaurants</h2>
         <div class="restaurants__cards">
-            <article class="restaurants__card">
+            <article id="restaurants" class="restaurants__card">
                 <a class="__link" href="restaurants/lapalettedugout.html">
                 <div class="restaurants__card-wrapper">
                     <div class="restaurants__card-img imglapalettedugout"></div>
-                    <!--img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût"-->
                     <div class="restaurants__card-bottom">
                         <div class="restaurants__card-bottom-desc">
                             <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
                         </div>
-                        <i class="fa-regular fa-heart restaurants__card-bottom__heart"></i>
+                        <div class="like-container">
+                            <input type="checkbox" class="like-container__like-btn" />
+                          </div>
                     </div>
                 </div>
                 <div class="flag-new">Nouveau</div>
@@ -83,7 +84,6 @@
                 <a class="__link" href="restaurants/lanoteenchantée.html">
                 <div class="restaurants__card-wrapper">
                     <div class="restaurants__card-img lanoteenchantee"></div>
-                    <!--img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût"-->
                     <div class="restaurants__card-bottom">
                         <div class="restaurants__card-bottom-desc">
                             <h3>La note enchantée</h3>
@@ -100,7 +100,6 @@
                 <a class="__link" href="restaurants/alafrancaise.html">
                 <div class="restaurants__card-wrapper">
                     <div class="restaurants__card-img alafrancaise"></div>
-                    <!--img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût"-->
                     <div class="restaurants__card-bottom">
                         <div class="restaurants__card-bottom-desc">
                             <h3>À la française</h3>
@@ -116,7 +115,6 @@
                 <a class="__link" href="restaurants/ledelicedessens.html">
                 <div class="restaurants__card-wrapper">
                     <div class="restaurants__card-img ledelicedessens"></div>
-                    <!--img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Restaurant la palette du goût"-->
                     <div class="restaurants__card-bottom">
                         <div class="restaurants__card-bottom-desc">
                             <h3>Le délice des sens</h3>
@@ -138,7 +136,7 @@
         </div>
         <div class="footer__second2links">
             <a href="#">Mentions légales</a>
-            <a href="#">Contact</a>
+            <a href="mailto:cyril.cantonnet@gmail.com">Contact</a>
         </div>
         <h2 class="footer__logo">ohmyfood</h2>
     </footer>
