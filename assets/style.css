@@ -70,9 +70,7 @@
 }
 @media screen and (min-width: 1440px) {
   .lapalettedugout {
-    width: auto;
-    margin-right: 192px;
-    margin-left: 192px;
+    width: 1055px;
   }
 }
 .lapalettedugout__top {
