@@ -24,6 +24,17 @@
   background-size: cover;
   z-index: -1;
 }
+@media screen and (min-width: 768px) {
+  .header__image {
+    background-position-y: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__image {
+    flex: 342px;
+    background-position-y: -400px;
+  }
+}
 .header__top {
   display: flex;
   justify-content: center;
@@ -47,14 +58,33 @@
 .lapalettedugout {
   margin-top: -50px;
   border-radius: 40px 40px 0px 0px;
-  background-color: #ffffff;
+  background-color: #F7F7F7;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .lapalettedugout {
+    width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .lapalettedugout {
+    width: auto;
+    margin-right: 192px;
+    margin-left: 192px;
+  }
 }
 .lapalettedugout__top {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   padding: 0 17px;
+}
+@media screen and (min-width: 1440px) {
+  .lapalettedugout__top {
+    justify-content: center;
+  }
 }
 .lapalettedugout__top__titre {
   font-family: "Shrikhand", cursive;
@@ -70,10 +100,21 @@
   font-size: 22px;
   padding-right: 24px;
 }
+@media screen and (min-width: 1440px) {
+  .lapalettedugout__top__icone {
+    margin-left: 24px;
+  }
+}
 .lapalettedugout .categories {
   padding-bottom: 40px;
   padding-left: 13px;
   padding-right: 13px;
+}
+@media screen and (min-width: 1440px) {
+  .lapalettedugout .categories {
+    width: 634px;
+    margin: auto;
+  }
 }
 .lapalettedugout .categorie {
   padding: 0 13px;
@@ -120,6 +161,11 @@
 .lapalettedugout .commander-button {
   margin: 0 auto -26px auto;
 }
+@media screen and (min-width: 768px) {
+  .lapalettedugout .commander-button {
+    margin: 0 auto 10px auto;
+  }
+}
 
 body {
   margin: 0;
@@ -132,7 +178,6 @@ body {
 @media screen and (min-width: 980px) {
   .maincontainer {
     display: flex;
-    padding: 0 10%;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
@@ -152,6 +197,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .header__logo {
   font-family: "Shrikhand", cursive;

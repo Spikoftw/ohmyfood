@@ -3,7 +3,6 @@
 @import "mixins";
 @import "components";
 @import "page_restaurants";
-@import "responsive";
 
 body {
     margin: 0;
@@ -16,7 +15,6 @@ body {
 
     @media screen and (min-width: 980px) {
     display: flex;
-    padding: 0 10%;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;       
@@ -37,6 +35,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     &__logo {
         font-family: 'Shrikhand', cursive;
