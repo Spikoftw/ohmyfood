@@ -59,7 +59,7 @@
 .lapalettedugout {
   margin-top: -50px;
   border-radius: 40px 40px 0px 0px;
-  background-color: #F7F7F7;
+  background-color: #F3F3F3;
   z-index: 2;
 }
 @media screen and (min-width: 768px) {
@@ -241,7 +241,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F7F7F7;
+  background-color: #F3F3F3;
   padding-bottom: 57px;
   margin-bottom: 48px;
   width: 100%;
@@ -282,7 +282,7 @@ h3 {
 }
 @media screen and (min-width: 900px) {
   .fonctionnement {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
     width: 710px;
   }
 }
@@ -358,10 +358,11 @@ h3 {
 
 /* Section restaurants */
 .restaurants {
-  padding: 0 18px 0;
-  background-color: #ffffff;
+  padding: 30px 18px 0;
+  background-color: #F3F3F3;
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 900px) {
   .restaurants {
@@ -516,7 +517,7 @@ h3 {
     padding-bottom: 30px;
     padding-right: 26px;
     height: 114px;
-    margin-top: 30px;
+    margin-top: 0;
   }
 }
 .footer a {
