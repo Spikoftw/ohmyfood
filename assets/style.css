@@ -338,6 +338,8 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  animation: unscroll 7s forwards;
+  overflow-x: hidden;
 }
 
 .maincontainer {
@@ -425,7 +427,7 @@ h3 {
   width: 6px;
   height: 18px;
   border-radius: 20%;
-  background: #cef;
+  background: #99e2d0;
 }
 
 .loader-spinner div:nth-child(1) {
@@ -892,6 +894,15 @@ h3 {
     order: inherit;
     padding-bottom: 0;
     padding-left: 16px;
+  }
+}
+
+@keyframes unscroll {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
   }
 }
 
