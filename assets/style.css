@@ -14,8 +14,23 @@
   height: 50px;
   width: 218px;
   text-decoration: none;
+  transition: opacity 250ms ease;
 }
 
+.primary-btn:hover {
+  animation: opacity 500ms;
+  animation-fill-mode: both;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+}
 .header__image {
   width: 100%;
   background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -134,6 +149,7 @@
   border-radius: 15px;
   padding: 12px 15px;
   margin-top: 12px;
+  background-color: white;
 }
 .lapalettedugout .categorie__content__nomduplat {
   margin: 0;

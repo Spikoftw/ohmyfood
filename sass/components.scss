@@ -12,4 +12,23 @@
     height: 50px;
     width: 218px;
     text-decoration: none;
+    transition: opacity 250ms ease;
+}
+
+.primary-btn:hover {
+    animation: opacity 500ms;
+    animation-fill-mode: both;
+ //   background: linear-gradient(193.33deg, lighten($maincolor, 5) -11.44%, lighten($secondarycolor, 5) 123.93%)
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.8;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    
 }
