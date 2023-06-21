@@ -2,8 +2,6 @@
 
     &__image {
         width: 100%;
-        background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg
-        );
         background-size: 100%;
         flex: 275px;
         background-repeat: no-repeat;
@@ -18,6 +16,22 @@
         flex: 342px; 
         background-position-y: -400px;           
         }
+    }
+
+    &__palettedugoutimg {
+        background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    }
+
+    &__lanoteenchanteeimg {
+        background-image: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+
+    &__alafrancaiseimg {
+        background-image: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+
+    &__ledelicedesens {
+        background-image: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
     }
 
     &__top {
@@ -44,7 +58,7 @@
 
 }
 
-.lapalettedugout {
+.menucontainer {
 margin-top: -50px;
 border-radius: 40px 40px 0px 0px;
 background-color: $lightgrey;
@@ -64,7 +78,7 @@ margin-left: auto;
 
     &__top {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: baseline;
         padding: 0 17px;
 
@@ -81,6 +95,7 @@ margin-left: auto;
             margin: 0;
             padding-top: 32px;
             padding-bottom: 42px;
+            padding-right: 24px;
         }
 
         &__icone {
@@ -91,6 +106,55 @@ margin-left: auto;
             margin-left: 24px;                
             }
 
+        }
+
+        .like-container__like-btn {
+            position: relative;
+            border: none;
+            background: none;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            appearance: none;
+          
+            &::before,
+            &::after {
+              left: 0px;
+              top: 0px;
+              display: block;
+              position: absolute;
+              content: "\f004";
+              font-family: "Font Awesome 6 Free";
+              font-size: 20px;
+              transition: 400ms;
+              background: none;
+            }
+
+            &::before {
+                font-weight: 400;
+                opacity: 1;
+
+              }
+
+              &::after {
+                font-weight: 900;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background: linear-gradient(193.33deg, $maincolor -11.44%, $secondarycolor 123.93%);
+                color: transparent;
+                opacity: 0;
+                -webkit-background-clip: text;
+                background-clip: text;
+              }
+
+          &:checked::before {
+            opacity: 0;
+          }
+          &:checked::after {
+            opacity: 1;
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
         }
     }
     

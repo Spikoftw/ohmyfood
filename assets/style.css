@@ -33,7 +33,6 @@
 }
 .header__image {
   width: 100%;
-  background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: 100%;
   flex: 275px;
   background-repeat: no-repeat;
@@ -50,6 +49,18 @@
     flex: 342px;
     background-position-y: -400px;
   }
+}
+.header__palettedugoutimg {
+  background-image: url(./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.header__lanoteenchanteeimg {
+  background-image: url(./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.header__alafrancaiseimg {
+  background-image: url(./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.header__ledelicedesens {
+  background-image: url(./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
 .header__top {
   display: flex;
@@ -71,7 +82,7 @@
   z-index: 99;
 }
 
-.lapalettedugout {
+.menucontainer {
   margin-top: -50px;
   border-radius: 40px 40px 0px 0px;
   background-color: #F3F3F3;
@@ -79,29 +90,29 @@
   z-index: 2;
 }
 @media screen and (min-width: 768px) {
-  .lapalettedugout {
+  .menucontainer {
     width: 768px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1440px) {
-  .lapalettedugout {
+  .menucontainer {
     width: 1055px;
   }
 }
-.lapalettedugout__top {
+.menucontainer__top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: baseline;
   padding: 0 17px;
 }
 @media screen and (min-width: 1440px) {
-  .lapalettedugout__top {
+  .menucontainer__top {
     justify-content: center;
   }
 }
-.lapalettedugout__top__titre {
+.menucontainer__top__titre {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 28px;
@@ -110,43 +121,86 @@
   margin: 0;
   padding-top: 32px;
   padding-bottom: 42px;
+  padding-right: 24px;
 }
-.lapalettedugout__top__icone {
+.menucontainer__top__icone {
   font-size: 22px;
   padding-right: 24px;
 }
 @media screen and (min-width: 1440px) {
-  .lapalettedugout__top__icone {
+  .menucontainer__top__icone {
     margin-left: 24px;
   }
 }
-.lapalettedugout .categories {
+.menucontainer__top .like-container__like-btn {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  appearance: none;
+}
+.menucontainer__top .like-container__like-btn::before, .menucontainer__top .like-container__like-btn::after {
+  left: 0px;
+  top: 0px;
+  display: block;
+  position: absolute;
+  content: "\f004";
+  font-family: "Font Awesome 6 Free";
+  font-size: 20px;
+  transition: 400ms;
+  background: none;
+}
+.menucontainer__top .like-container__like-btn::before {
+  font-weight: 400;
+  opacity: 1;
+}
+.menucontainer__top .like-container__like-btn::after {
+  font-weight: 900;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: transparent;
+  opacity: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.menucontainer__top .like-container__like-btn:checked::before {
+  opacity: 0;
+}
+.menucontainer__top .like-container__like-btn:checked::after {
+  opacity: 1;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.menucontainer .categories {
   padding-bottom: 40px;
   padding-left: 13px;
   padding-right: 13px;
 }
 @media screen and (min-width: 1440px) {
-  .lapalettedugout .categories {
+  .menucontainer .categories {
     width: 634px;
     margin: auto;
   }
 }
-.lapalettedugout .categorie {
+.menucontainer .categorie {
   padding: 0 13px;
   display: flex;
   align-items: end;
 }
-.lapalettedugout .categorie__titre {
+.menucontainer .categorie__titre {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
 }
-.lapalettedugout .categorie__titre__soulignement {
+.menucontainer .categorie__titre__soulignement {
   border: 2px solid #99E2D0;
   width: 40px;
 }
-.lapalettedugout .categorie__content {
+.menucontainer .categorie__content {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   padding: 12px 15px;
@@ -154,7 +208,7 @@
   background-color: white;
   width: 100%;
 }
-.lapalettedugout .categorie__content__nomduplat {
+.menucontainer .categorie__content__nomduplat {
   margin: 0;
   font-weight: 500;
   font-size: 18px;
@@ -163,12 +217,12 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.lapalettedugout .categorie__content__bottom {
+.menucontainer .categorie__content__bottom {
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
 }
-.lapalettedugout .categorie__content__desc {
+.menucontainer .categorie__content__desc {
   margin: 0;
   font-weight: 300;
   font-size: 15px;
@@ -177,13 +231,13 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.lapalettedugout .categorie__content__prix {
+.menucontainer .categorie__content__prix {
   margin: 0;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
 }
-.lapalettedugout .categorie .checkanimation {
+.menucontainer .categorie .checkanimation {
   display: flex;
   width: 0;
   justify-content: center;
@@ -195,17 +249,17 @@
   color: white;
   transition: 250ms ease-in-out;
 }
-.lapalettedugout .categorie:hover .checkanimation {
+.menucontainer .categorie:hover .checkanimation {
   width: 59px;
 }
-.lapalettedugout .categorie__content:hover {
+.menucontainer .categorie__content:hover {
   border-radius: 15px 0 0 15px;
 }
-.lapalettedugout .commander-button {
+.menucontainer .commander-button {
   margin: 0 auto 0px auto;
 }
 @media screen and (min-width: 768px) {
-  .lapalettedugout .commander-button {
+  .menucontainer .commander-button {
     margin: 0 auto 10px auto;
   }
 }
@@ -270,31 +324,6 @@
   opacity: 0;
 }
 
-/*
-.anim-menu1{
-    animation: fadein 1000ms ease-in-out forwards;
-    animation-delay: 0;
-    opacity: 0;
-}
-
-.anim-menu2{
-    animation: fadein 1000ms ease-in-out forwards;
-    animation-delay: 250ms;
-    opacity: 0;
-}
-
-.anim-menu3{
-    animation: fadein 1000ms ease-in-out forwards;
-    animation-delay: 500ms;
-    opacity: 0;
-}
-
-.anim-menu4{
-    animation: fadein 1000ms ease-in-out forwards;
-    animation-delay: 750ms;
-    opacity: 0;
-}
-*/
 @keyframes fadein {
   0% {
     opacity: 0;
