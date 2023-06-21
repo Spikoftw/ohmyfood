@@ -199,3 +199,21 @@ margin-left: auto;
     }
 }
 
+
+@for $i from 1 through 10 {
+    .anim-menu#{$i} {
+        animation: fadein 1000ms ease-in-out forwards;
+        animation-delay: 250ms*$i;
+        opacity: 0;
+    }
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
