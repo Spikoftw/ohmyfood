@@ -683,7 +683,7 @@ h3 {
   color: #7e7e7e;
   font-size: 20px;
 }
-.fonctionnement__etape-icon--violet {
+.fonctionnement__etape-icon:hover {
   color: #9356dc;
 }
 

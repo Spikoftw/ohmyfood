@@ -325,7 +325,7 @@ h3 {
     color: #7e7e7e;
     font-size: 20px;
 
-    &--violet {
+    &:hover {
       color: $maincolor;
     }
   }
