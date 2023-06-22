@@ -653,6 +653,12 @@ h3 {
   padding: 25px 34px;
   background-color: #f3f3f3;
 }
+.fonctionnement__etape-elem:hover {
+  cursor: pointer;
+}
+.fonctionnement__etape-elem:hover .fonctionnement__etape-icon {
+  color: #9356dc;
+}
 @media screen and (min-width: 900px) {
   .fonctionnement__etape-elem {
     display: flex;
@@ -682,9 +688,6 @@ h3 {
 .fonctionnement__etape-icon {
   color: #7e7e7e;
   font-size: 20px;
-}
-.fonctionnement__etape-icon:hover {
-  color: #9356dc;
 }
 
 /* Section restaurants */

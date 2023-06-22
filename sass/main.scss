@@ -294,6 +294,14 @@ h3 {
     padding: 25px 34px;
     background-color: $lightgrey;
 
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .fonctionnement__etape-icon {
+      color: $maincolor;
+    }
+
     @media screen and (min-width: 900px) {
       display: flex;
       justify-content: space-between;
@@ -324,10 +332,6 @@ h3 {
   &__etape-icon {
     color: #7e7e7e;
     font-size: 20px;
-
-    &:hover {
-      color: $maincolor;
-    }
   }
 }
 
