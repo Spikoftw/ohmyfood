@@ -17,9 +17,9 @@
   width: 218px;
   text-decoration: none;
   transition: 250ms ease;
-}
 
-.primary-btn:hover {
-  opacity: 0.8;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  }
 }

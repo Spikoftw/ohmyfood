@@ -11,6 +11,16 @@ body {
   overflow-x: hidden;
 }
 
+@keyframes unscroll {
+  from {
+    overflow-y: hidden;
+  }
+
+  to {
+    overflow-y: auto;
+  }
+}
+
 .maincontainer {
   margin: 0;
 
@@ -273,6 +283,7 @@ h3 {
     font-size: 14px;
     color: $white;
     left: -12px;
+    top: 25px;
   }
 
   &__etape-elem {
@@ -568,15 +579,5 @@ h3 {
       padding-bottom: 0;
       padding-left: 16px;
     }
-  }
-}
-
-@keyframes unscroll {
-  from {
-    overflow-y: hidden;
-  }
-
-  to {
-    overflow-y: auto;
   }
 }
