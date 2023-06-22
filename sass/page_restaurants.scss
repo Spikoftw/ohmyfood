@@ -196,8 +196,10 @@
       overflow: hidden;
 
       &__wrapper {
-        flex: 100%;
+        flex: auto;
         padding: 12px 15px;
+        width: calc(100% - 59px - 15px);
+        box-sizing: border-box;
       }
 
       &__nomduplat {
