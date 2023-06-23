@@ -436,7 +436,9 @@ h3 {
     }
 
     .like-container__like-btn {
-      position: relative;
+      position: absolute;
+      left: 85%;
+      bottom: 12%;
       border: none;
       background: none;
       cursor: pointer;
