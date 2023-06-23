@@ -259,74 +259,6 @@
   }
 }
 
-.anim-menu1 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 125ms;
-  opacity: 0;
-}
-
-.anim-menu2 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 250ms;
-  opacity: 0;
-}
-
-.anim-menu3 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 375ms;
-  opacity: 0;
-}
-
-.anim-menu4 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 500ms;
-  opacity: 0;
-}
-
-.anim-menu5 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 625ms;
-  opacity: 0;
-}
-
-.anim-menu6 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 750ms;
-  opacity: 0;
-}
-
-.anim-menu7 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 875ms;
-  opacity: 0;
-}
-
-.anim-menu8 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 1000ms;
-  opacity: 0;
-}
-
-.anim-menu9 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 1125ms;
-  opacity: 0;
-}
-
-.anim-menu10 {
-  animation: fadein 500ms ease-in-out forwards;
-  animation-delay: 1250ms;
-  opacity: 0;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* Body scroll sync avec le loader */
 @keyframes unscroll {
   from {
@@ -672,6 +604,13 @@ h3 {
     padding-left: 180px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .fonctionnement h2 {
+    width: 1080px;
+    padding: 0;
+    margin: auto;
+  }
+}
 .fonctionnement__etapes {
   list-style: none;
   padding: 0;
@@ -689,6 +628,13 @@ h3 {
     justify-items: center;
     padding-left: 192px;
     padding-right: 180px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fonctionnement__etapes {
+    width: 1080px;
+    padding: 0;
+    margin: auto;
   }
 }
 .fonctionnement__etape-pastille {
@@ -779,6 +725,13 @@ h3 {
     padding-left: 180px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .restaurants__title {
+    width: 1080px;
+    padding: 0;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .restaurants__cards {
     display: grid;
@@ -796,6 +749,13 @@ h3 {
     padding: 30px 180px;
     grid-gap: 100px;
     grid-row-gap: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restaurants__cards {
+    padding: 30px 0;
+    width: 1080px;
+    margin: auto;
   }
 }
 .restaurants__card {
