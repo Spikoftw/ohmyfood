@@ -508,16 +508,25 @@ h3 {
   width: 100%;
 }
 .header__logo {
-  font-family: "Shrikhand", cursive;
-  font-size: 30px;
-  padding-top: 14px;
-  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   z-index: 1;
-  text-decoration: none;
-  color: inherit;
+  padding: 18px 0 17px 0;
+}
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    padding: 30px 0 31px 0;
+  }
+}
+.header__logo img {
+  width: 162px;
+}
+@media screen and (min-width: 1024px) {
+  .header__logo img {
+    width: 200px;
+  }
 }
 .header__localisation {
   display: flex;
@@ -699,15 +708,14 @@ h3 {
 
 /********** Section restaurants **********/
 .restaurants {
-  padding: 30px 18px 0;
+  padding: 30px 18px 66px 18px;
   background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
 }
 @media screen and (min-width: 1024px) {
   .restaurants {
-    padding: 30px 0 0;
+    padding: 30px 0 0 0;
   }
 }
 .restaurants__title {
@@ -868,7 +876,7 @@ h3 {
   padding-left: 25px;
   padding-bottom: 22px;
 }
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1024px) {
   .footer {
     flex-direction: row;
     justify-content: right;
@@ -894,12 +902,12 @@ h3 {
 .footer__first2links i {
   padding-right: 10px;
 }
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1024px) {
   .footer__first2links {
     flex-direction: row;
   }
 }
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1024px) {
   .footer__first2links a {
     padding-left: 7px;
   }
@@ -908,13 +916,13 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1024px) {
   .footer__second2links {
     flex-direction: row;
     padding-left: 25px;
   }
 }
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1024px) {
   .footer__second2links a {
     width: 130px;
     padding-left: 7px;
@@ -932,7 +940,7 @@ h3 {
   padding-bottom: 9px;
   padding-top: 22px;
 }
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1024px) {
   .footer__logo {
     order: inherit;
     padding-bottom: 0;
